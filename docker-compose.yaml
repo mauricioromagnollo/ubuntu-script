@@ -1,0 +1,12 @@
+version: "3"
+services:
+  ubuntu:
+    build: .
+    container_name: ubuntu
+    restart: always
+    # args:
+    #   USERNAME: ubuntu
+    #   PASSWORD: ubuntu
+    command: tail -f /dev/null
+    volumes:
+      - .:/home/ubuntu
